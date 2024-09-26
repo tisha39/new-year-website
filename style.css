@@ -1,72 +1,198 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-.{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-body{
+body {
     font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
-/* banner section style start  */
-.banner-container{
-    max-width: 1320px; 
- margin: 0 auto;
-    border-radius: 5px;
-min-height: 600px;
-margin-top:20px ;
-background-image: url("./images/Banner\ Image.png");
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-background-color: rgba(0,0,0,0.5);
-background-blend-mode: overlay;
+.banner-contain {
+
+    max-width: 1200px;
+    min-height: 500px;
+    margin: 50px auto;
+    background-image: url(images/Banner\ Image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
 }
-.banner-contant p, h1{
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    align-items: center;
+}
+
+.banner p {
+    font-size: 30px;
+    font-weight: 400;
     color: white;
-margin: 10px;
 }
-.banner-contant{
+
+.banner,
+h2 {
+    font-size: 72px;
+    font-weight: 900;
+    color: white;
+}
+
+.second-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 802px;
+    height: 800px;
+    margin: 120px auto;
+}
+
+.second-banner h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: red;
+}
+
+.second-banner p {
+    font-size: 24px;
+    font-weight: 500;
+    color: red;
+}
+
+.second-banner h3 {
+    font-size: 48px;
+    font-weight: 700;
+    color: rgba(7, 2, 17, 1);
+}
+
+.third-banner {
+    padding: 0 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    height: 600px;
+    background-image: url(images/Vectorrr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    margin: 20px auto;
+}
+
+.t-banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 600px;
+}
+
+.t-banner-text p {
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.t-banner-text h1 {
+    color: aliceblue;
+    font-size: 64px;
+}
+
+.t-banner-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 319px;
+    height: 400px;
+}
+.t-banner-btn{
+    color: white;
+    margin: 0 auto 0 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.cardd{
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    height: 482px;
+    margin: 120px auto;
+    background-image: linear-gradient(to top, rgba(255,0,0,0), rgba(235, 164, 164, 0.692));
+}
+.c-color{
+    color: rgba(255, 0, 0, 1);
+}
+.card ,h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin: 10px 0;
+}
+.card-btn{
+    background-color: #FF0000;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    margin: 110px auto;
+    margin-top: 80px;
+}
+.holiday-section-container{
+    width: 1100px;
+    height: 986px;
+    border: 2px solid black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+   position: relative;
+   margin-bottom: 10px;
+}
+.holiday-text-container{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    Width:1100px;
+    Height:260px;
+    margin: 0 auto;
+    position: relative;   
 }
-.banner-contant h1{
-    font-size: 72px;
-font-weight: 900;
+.holiday-text-container p{
+    text-align: center;
 }
-.banner-contant p{
-    font-size: 32px;
-font-weight: 900;
+.solid-color{
+    background-color: #FF0000;
+    Width:1100px;
+    Height :229px;
+    margin: 0 auto;
+    position: absolute;
+    top: 77%;
+ 
 }
-
-/* <!-- 65% section starts here  --> */
-
-.second-section-container{
-width: 802.9px;
-height: 806px;
-margin: 0 auto;
-border: 2px solid red;
-margin-top: 90px;
+.girl-container{
+    position: absolute;
+    left: 70%;
+    top: 40%;
 }
-.second-section-container{
+.gift-box{
     display: flex;
-    
-    justify-content: center;
-    /* align-items: center; */
-   
+    justify-content: space-between;
+    height: 700px;
 }
-.second-section-container h1{
-    color: rgb(255, 0, 0);
-font-family: Inter;
-font-size: 88px;
-font-weight: 700;
-
-}
-.second-section-container{
-    
-} 
+.gift-box img{
+        position: absolute;}
+        
